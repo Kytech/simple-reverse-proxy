@@ -8,10 +8,10 @@ The container is configured with two environment variables, one for the server n
 Here is an example of how to use this container:
 ```
 $ docker run \
-  -p 80:80 \
-  -e NGINX_SERVER_NAME=somesite.com \
-  -e NGINX_REMOTE_URL=http://someremotesite.com \
-  kytech/simple-reverse-proxy
+ -p 80:80 \
+ -e NGINX_SERVER_NAME=somesite.com \
+ -e NGINX_REMOTE_URL=http://someremotesite.com \
+ kytech/simple-reverse-proxy
 ```
 
 The current configuration proxys the remtoe url at the root of the specified server name.
