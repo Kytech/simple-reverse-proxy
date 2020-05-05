@@ -14,6 +14,8 @@ $ docker run \
  kytech/simple-reverse-proxy
 ```
 
+Optionally, if you do not want to have nginx buffer proxied requests, set the environment variable `NGINX_NO_BUFFER` to `true`.
+
 The current configuration proxys the remtoe url at the root of the specified server name.
 
 To edit the default configuration, modify the proxyserver.template file either through a bind mount pointed to `/etc/nginx/conf.d/proxyserver.template` or by editing the file and rebuilding using `docker build`
