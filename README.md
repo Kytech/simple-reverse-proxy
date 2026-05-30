@@ -1,7 +1,9 @@
 # simple-reverse-proxy
 A simple reverse proxy docker container powered by nginx.
 
-Update: Archived as I am no longer maintaining this image. I'd strongly recommend using [Caddy](https://github.com/caddyserver/caddy) for an easy reverse proxy (it has replaced this for my main use cases), or to leverage the NGINX config templating support found in the upstream NGINX image.
+**Update:** Archived as I am no longer maintaining this image. I'd strongly recommend using [Caddy](https://github.com/caddyserver/caddy) for an easy reverse proxy (it has replaced this for my main use cases), or to leverage the NGINX config templating support found in the upstream NGINX image.
+
+---
 
 This container is relatively straightforward. It's default configuration is to act as a reverse proxy for a single specified endpoint using nginx as the reverse proxy engine.
 
